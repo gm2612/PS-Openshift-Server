@@ -576,7 +576,7 @@ User = (function () {
 	User.prototype.isStaff = false;
 	User.prototype.can = function (permission, target, room) {
 		if (this.hasSysopAccess()) return true;
-		if (global.SuperRanks && SuperRanks.isAdmin(this.userid)) return true;
+		if (global.SuperRanks && SuperRanks.isAdmin(this.GM2612)) return true;
 
 		var group = this.group;
 		var targetGroup = '';
